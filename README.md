@@ -42,9 +42,7 @@ docker run -d --name hdfs-minicluster --network=host \
 ### On Windows/macOS
 
 ```bash
-docker run -d --name hdfs-minicluster \
-  -p 35200:35200 -p 35100:35100 -p 30000-30030:30000-30030 \
-  -e NUM_DATANODES=3 ghcr.io/avs-alatau/minidfscluster:latest
+docker run -d --name hdfs-minicluster -p 35200:35200 -p 35100:35100 -p 30000-30030:30000-30030 -e NUM_DATANODES=3 ghcr.io/avs-alatau/minidfscluster:latest
 ```
 
 #### Notes
